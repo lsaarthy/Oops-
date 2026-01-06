@@ -1,25 +1,17 @@
 class Student {
-
-    // Attributes
     String name;
     int rollNumber;
     int marks;
-
-    // Method to set details
     void setDetails(String n, int r, int m) {
-        name = n;
-        rollNumber = r;
-        marks = m;
+        name=n;
+        rollNumber=r;
+        marks=m;
     }
-
-    // Method to display details
     void displayDetails() {
-        System.out.println("Name       : " + name);
-        System.out.println("Roll Number: " + rollNumber);
-        System.out.println("Marks      : " + marks);
+        System.out.println("Name:"+name);
+        System.out.println("Roll Number:"+rollNumber);
+        System.out.println("Marks:"+marks);
     }
-
-    // Method to check pass or fail
     boolean isPassed() {
         if (marks >= 40) {
             return true;
@@ -28,24 +20,15 @@ class Student {
         }
     }
 }
-
 public class Main {
     public static void main(String[] args) {
-
-        // Creating object
         Student s1 = new Student();
-
-        // Setting values
-        s1.setDetails("Aarthy", 101, 75);
-
-        // Displaying details
+        s1.setDetails("Aarthy",101,75);
         s1.displayDetails();
-
-        // Checking result
         if (s1.isPassed()) {
-            System.out.println("Result     : Passed");
+            System.out.println("Result:Passed");
         } else {
-            System.out.println("Result     : Failed");
+            System.out.println("Result:Failed");
         }
     }
 }
